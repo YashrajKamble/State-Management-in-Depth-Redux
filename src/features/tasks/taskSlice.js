@@ -11,7 +11,7 @@ const taskSlice = createSlice({
             reducer: (state, action) => {
                 state.items.push(action.payload)
             },
-            payload: (text) => {
+            prepare: (text) => {
                 return {
                     payload: {
                         id: nanoid(),

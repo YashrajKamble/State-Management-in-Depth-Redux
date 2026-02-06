@@ -1,10 +1,10 @@
-const TaskList = () => {
+import { useSelector } from "react-redux";
 
-    return(
-        <ul>
-            
-        </ul>
-    )
+const TaskList = () => {
+  const { items, filters } = useSelector((state) => state.task);
+  console.log(items, "items");
+
+  return <ul></ul>;
 };
 
 export default TaskList;
