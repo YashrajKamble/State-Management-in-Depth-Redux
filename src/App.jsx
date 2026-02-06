@@ -1,5 +1,6 @@
 import "./App.css";
 import AddTask from "./app/components/addTask";
+import FilterTask from "./app/components/FilterTask";
 import TaskList from "./app/components/TaskList";
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
     <div>
       <h1>Task Manager</h1>
       <AddTask />
-      <TaskList/>
+      <FilterTask />
+      <TaskList />
     </div>
   );
 }
