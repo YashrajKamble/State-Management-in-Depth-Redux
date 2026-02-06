@@ -5,11 +5,13 @@ import { addTask } from "../../features/tasks/taskSlice";
 
 const AddTask = () => {
   const [text, setText] = useState("");
+
   const dispatch = useDispatch();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(addTask(text));
-    setText("")
+    setText("");
   };
 
   return (
